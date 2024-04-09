@@ -1,132 +1,120 @@
 /* styles.css */
-/* styles.css */
-
-
-
-/* Reset default browser styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Navigation Bar */
+.navbar {
+    background-color: #d45d5d; /* Set background color */
 }
 
-/* Apply styles to navigation */
-nav {
-    background-color: #333;
-    padding: 10px 0;
+.navbar-brand {
+    color: #333; /* Set text color */
+    font-weight: bold; /* Set font weight */
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
+.navbar-nav .nav-link {
+    color: #540d0d; /* Set text color */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Apply styles to header */
+/* Header Section */
 header {
-    background-color: #f2f2f2;
-    padding: 50px 0;
-    text-align: center;
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center-align text */
 }
 
-header h1 {
-    font-size: 48px;
-    color: #333;
-}
-
-header p {
-    font-size: 24px;
-    color: #555;
-    margin-top: 20px;
-}
-
-/* Apply styles to services section */
+/* Services Section */
 #services {
-    padding: 50px 0;
-    text-align: center;
+    background-color: #f9f9f9; /* Set background color */
+    padding: 50px; /* Add padding */
+    text-align: center; /* Center-align text */
+}
+.all-service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .service {
-    display: inline-block;
-    margin: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.service:hover {
-    transform: translateY(-5px);
+    /*display: inline-block;  Display inline */
+    /* margin: 0 20px; Add margin */
+    text-align: left; /* Left-align text */
+    margin: 10px 0;
 }
 
 .service img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 100%;  
+    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px; 
+    object-fit: cover;
+}
+.service-img-box{
+    width: 500px;
+    height: 300px;
 }
 
-.service h3 {
-    font-size: 24px;
-    color: #333;
-    margin-top: 10px;
+
+/* Call-to-Action Section */
+#cta {
+    background-color: #263a4e; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center-align text */
 }
 
-.service p {
-    font-size: 16px;
-    color: #666;
+/* Testimonials Section */
+#testimonials {
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 30px; /* Add padding */
+    text-align: center; /* Center-align text */
 }
 
-/* Apply styles to contact section */
+.testimonial {
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+blockquote {
+    font-style: italic; /* Italicize text */
+}
+
+cite {
+    font-weight: bold; /* Set font weight */
+}
+
+/* Contact Section */
 #contact {
-    background-color: #f2f2f2;
-    padding: 50px 0;
-    text-align: center;
+    background-color: #f9f9f9; /* Set background color */
+    padding: 50px; /* Add padding */
+    text-align: center; /* Center-align text */
 }
 
-.contact-info {
-    margin-top: 20px;
+/* Footer Section */
+footer {
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center-align text */
 }
 
-.contact-info p {
-    font-size: 18px;
-    color: #333;
-}
-
-/* Apply styles to choose service section */
-#choose_service {
-    padding: 50px 0;
-    text-align: center;
-}
-
-#choose_service ul {
-    list-style-type: none;
-}
-
-#choose_service ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
+@media (max-width:992px) {
+    .service-img-box{
+        width: 100%;
+        height: auto;
+    }
+    h3 {
+        font-size: 20px !important;
+    }
+    h1{
+        font-size: 30px !important;
+    }
+    h2{
+        font-size: 25px !important;
+    }
+    
 }
